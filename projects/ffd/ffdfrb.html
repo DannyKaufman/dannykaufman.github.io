@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  <style type="text/css" media="all">
+
+	img {
+
+		padding-top: 10px;
+
+		padding-left: 10px;
+
+		padding-bottom: 10px;
+
+		padding-right: 0;
+
+		float: right;
+
+	}
+
+
+
+	body {
+
+ 		max-width: 650px;
+
+		width: expression(document.body.clientWidth > 650? "650px": "auto" );
+
+		text-align: left;
+
+		margin-left: auto;
+
+		margin-right: auto
+
+	}
+
+  </style>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="Author" content="Danny Kaufman">
+  <title>Fast Frictional Dynamics For Rigid Bodies</title>
+</head>
+<body
+ style="color: rgb(244, 254, 254); background-color: rgb(30, 30, 30);"
+ nosave="" alink="#ffffcc" link="#ffffcc" vlink="#ffffcc">
+
+<div style="text-align: justify;"><big style="font-family: arial;"><big><big><b>Fast
+Frictional Dynamics For
+Rigid
+Bodies</b></big></big></big> <br>
+</div>
+<img alt="" src="chessStill.jpg" style="width: 341px; height: 340px;">
+<big style="font-family: arial;"><big><big> </big></big></big> <br>
+<a style="font-family: arial;"
+ href="http://www.cs.columbia.edu/~kaufman">Danny
+M. Kaufman<br>
+</a><a style="font-family: arial;"
+ href="http://www.research.rutgers.edu/~tedmunds">Timothy Edmunds</a><br
+ style="font-family: arial;">
+<a style="font-family: arial;" href="https://www.cs.ubc.ca/~pai/">Dinesh
+K. Pai</a><br>
+<span style="font-family: arial;"><span style="font-weight: bold;"><br>
+<br>
+</span><big>Abstract:</big></span>
+<p style="text-align: left;"><span style="font-family: arial;">We
+describe an efficient algorithm
+for the simulation of large sets of
+non-convex rigid bodies. The algorithm finds a simultaneous solution
+for a multi-body system that is linear in the total number of contacts
+detected in each iteration. We employ a novel contact model that uses
+mass, location, and velocity information from all contacts, at the
+moment of maximum compression, to constrain rigid body velocities. We
+also develop a new friction model in the configuration space of rigid
+bodies. These models are used to compute the feasible velocity and the
+frictional response of each body. Implementation is simple and leads to
+a fast rigid body simulator that computes steps on the order of seconds
+for simulations involving over one thousand non-convex objects in high
+contact configurations.<big><br>
+</big></span></p>
+<div style="margin-left: 40px;"><span style="font-family: arial;"><big><small><a
+ href="KaufEdPai_ffdfrb05.pdf">paper (pdf - 6MB)<br>
+</a><br>
+</small></big></span></div>
+<br>
+<font face="Arial,Helvetica"><big>Citation:</big><br>
+<br>
+Danny M. Kaufman, Timothy
+Edmunds and Dinesh K. Pai, Fast Frictional Dynamics for Rigid
+Bodies, <i>ACM
+Transactions on Graphics (SIGGRAPH 2005)</i>, 24(3), August 2005</font><font
+ face="Arial,Helvetica">.</font><br>
+<br>
+<br>
+<big><span style="font-family: arial;">Videos:</span></big><br>
+<font face="Arial,Helvetica" size="+2"><span
+ style="color: rgb(255, 255, 204);"></span></font><font
+ face="Arial,Helvetica" size="+2"><span
+ style="color: rgb(255, 255, 204);"></span></font><br>
+<table style="text-align: left; width: 617px; height: 620px;" border="1"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td><img alt="" src="chessActive.jpg"
+ style="padding: 0pt; width: 300px; height: 300px; float: none; clear: both;"></td>
+      <td style="vertical-align: top;"> <img alt="" src="hopper.png"
+ style="padding: 0pt; width: 300px; height: 300px; float: none; clear: both;"></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+      <div style="margin-left: 40px;"><a
+ href="chess.wmv"><small><span
+ style="font-family: arial;">WMV 39.1MB</span></small></a><br>
+      </div>
+      </td>
+      <td style="vertical-align: top;"><big> </big>
+      <div style="margin-left: 40px;"><a
+ href="hopper.wmv"><small><span
+ style="font-family: arial;">WMV 21.3MB</span></small></a><big> </big></div>
+      <big> </big></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img alt=""
+ src="goldBergLaunch.jpg"
+ style="border: 0px solid ; padding: 0pt; width: 300px; height: 300px; float: none; clear: both;"></td>
+      <td style="vertical-align: top;"><img alt="" src="loop.jpg"
+ style="border: 0px solid ; padding: 0pt; width: 300px; height: 300px; float: none; clear: both;"></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+      <div style="margin-left: 40px;"><small><span
+ style="font-family: arial;"><a
+ href="goldberg.avi">AVI,
+DIVX&nbsp;
+1.3MB</a><br>
+      </span></small></div>
+      </td>
+      <td style="vertical-align: top;">
+      <div style="margin-left: 40px;"><a
+ href="loop.wmv"><small><span
+ style="font-family: arial;">WMV 1.5MB</span></small></a><br>
+      </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img src="stackWithLever.jpg"
+ alt=""
+ style="border: 0px solid ; padding: 0pt; width: 300px; height: 300px; float: none; clear: both;"></td>
+      <td style="vertical-align: top;"><img alt=""
+ src="tetheredChainSlide.jpg"
+ style="border: 0px solid ; padding: 0pt; width: 300px; height: 300px; float: none; clear: both;"></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;">
+      <div style="margin-left: 40px;"><small style="font-family: arial;"><a
+ href="stackingWithLever.wmv">WMV
+0.5MB </a></small></div>
+      </td>
+      <td style="vertical-align: top;">
+      <div style="margin-left: 40px;"><small style="font-family: arial;"><a
+ href="tetheredChainSlide.wmv">WMV
+4.2MB</a></small></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<h2 style="font-family: arial;"><small><small>Funding:</small></small></h2>
+<span style="font-family: arial;">This work was supported in part by
+NSF grants IIS-0308157, ITR-0205671, and EIA-0215887.</span><br>
+<small><span style="font-family: arial;">(Any opinions, findings, and
+conclusions or recommendations expressed in this material are those of
+the authors and do not necessarily reflect the views of the National
+Science Foundation)</span></small><br>
+<br>
+<br>
+<small><font style="color: rgb(255, 255, 255);" face="Arial,Helvetica"><font
+ size="-1"><small>[last modified July 2005]</small></font></font></small><span
+ style="color: rgb(255, 255, 255);">&nbsp;
+</div>
+</span>
+</body>
+</html>

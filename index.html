@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Danny Kaufman">
+    <meta name="author" content="Danny Kaufman">
+
+    <title>Danny Kaufman</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="bootstrap-3.3.6/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="bootstrap-3.3.6/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="CSS/theme.css" rel="stylesheet">
+
+    <!-- Google fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	
+</head>
+<body>
+
+<!--HEADER INTRODUCTION-->
+<div class="container">
+	<div class="page-header">
+		<img style="align:left; width:28%" src="photos/danny-mfo.jpg" width="100%">
+		<h3>Danny Kaufman</h3>
+		<p>Senior Research Scientist <br> Adobe Research <br> 
+
+		<em> danny.kaufman.cs at gmail.com</em></p>
+		<br> 
+		<a href="https://www.cambridge.org/core/books/on-growth-and-form/5E06D10C10D0F0124A32E4B93B11DB4A"> <em> <q>The harmony of the world is made manifest in form and number...</q> </a> - D'Arcy Thompson </em>
+	<!--</div>-->
+
+
+<!--MAIN-->
+<div class="container"><div class="row">
+	
+	<div class="col-md col-md">
+		
+		<div class="page-header">
+			<h3 data-toc-text="Codes">Softwares</h3>
+
+		</div>
+
+		<a href="">OptCuts: </a>  
+		Joint optimization of surface cuts and parameterization. Simultaneous, automated optimization of distortion and seam cutting for 3D mesh parameterization problems.
+		<br><br>
+
+		<a href="">BCQN: </a> Blended Cured Quasi-Newton for distortion optimization. BCQN minimizes distortion energies (Neo-Hookean, Mooney-Rivlin, MIPS, Symmetric Dirichlet, Conformal Distortion and ARAP) for 3D and 2D deformation problems and for parameterization. 
+		<br><br>
+				
+		<a href="http://www.cs.ubc.ca/labs/sensorimotor/projects/sp_sigasia08"> Staggered Projections </a> and <a href="http://www.cs.columbia.edu/cg/rosi/"> Generalized Reflections </a> are available in <a href="https://github.com/breannansmith/scisim">SCISim</a>, our framework for structure-preserving simulation of frictional contact and impact.
+    	<br><br>
+    
+    	<a href="http://simit-lang.org/">Simit</a>, a programming language for physical simulation.
+    	<br><br>
+	
+	</div>
+
+		<div class="page-header">
+			<h3 data-toc-text="Publications">Publications</h3>
+	</div>
+		
+		<!-- OptCuts -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://www.cs.ubc.ca/labs/imager/tr/2018/OptCuts/"><img class="paperBlock" src="./projects/optcuts.jpg" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Minchen Li, Danny M. Kaufman, Vladimir G. Kim, Justin Solomon, and Alla Sheffer <br>
+					<strong> OptCuts: Joint Optimization of Surface Cuts and Parameterization </strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH Asia 2018) <br>
+					<a href="http://www.cs.ubc.ca/labs/imager/tr/2018/OptCuts/" target="_blank"> Project Page </a></p>
+
+					<!---<strong>Abstract:</strong> Low-distortion mapping of three-dimensional surfaces to the plane is a critical problem in geometry processing. The intrinsic distortion introduced by these UV mappings is highly dependent on the choice of surface cuts that form seamlines which break mapping continuity. Parameterization applications typically require UV maps with an application-specific upper bound on distortion to avoid mapping artifacts; at the same time they seek to reduce cut lengths to minimize discontinuity artifacts. We propose OptCuts, an algorithm that jointly optimizes the parameterization and cutting of a three-dimensional mesh. OptCuts starts from an arbitrary initial embedding and a user-requested distortion bound. It requires no parameter setting and automatically seeks to minimize seam lengths subject to satisfying the distortion bound of the mapping computed using these seams. OptCuts alternates between topology and geometry update steps that consistently decrease distortion and seam length, producing a UV map with compact boundaries that strictly satisfies the distortion bound. OptCuts automatically produces high-quality, globally bijective UV maps without user intervention. While OptCuts can thus be a highly effective tool to create new mappings from scratch, we also show how it can be employed to improve pre-existing embeddings. Additionally, when semantic or other priors on seam placement are desired, OptCuts can be extended to respect these user preferences as constraints during optimization of the parameterization. We demonstrate the scalable performance of OptCuts on a wide range of challenging benchmark parameterization examples, as well as in comparisons with state-of-the-art UV methods and commercial tools.-->
+				</div>
+			</div>
+		</div>
+		
+		<!-- BCQN -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="./projects/BCQN/BCQN.html"><img class="paperBlock" src="./projects/bcqn.jpg" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Yufeng Zhu, Robert Bridson, and Danny M. Kaufman
+					<br>
+					<strong> 
+					Blended Cured Quasi-Newton for Distortion Optimization 
+					</strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH 2018) <br>
+					<a href="./projects/BCQN/BCQN.html" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Stylus -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://pdf.mmci.uni-saarland.de/projects/DigitalStylus/"><img class="paperBlock" src="./projects/stylus.jpg" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Michal Piovarci, David I.W. Levin, Danny M. Kaufman, and Piotr Didyk 
+					<br>
+					<strong> 
+					Perception-Aware Modeling and Fabrication of Digital Drawing Tools 
+					</strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH 2018) <br>
+					<a href="http://pdf.mmci.uni-saarland.de/projects/DigitalStylus/" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- Topoerp -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://www.cs.columbia.edu/~kaufman"><img class="paperBlock" src="./projects/topo.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Yufeng Zhu, Jovan Popović, Robert Bridson, and Danny M. Kaufman 
+					<br>
+					<strong> 
+					Planar Interpolation with Extreme Deformation, Topology Change and Dynamics 
+					</strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH Asia 2017) <br>
+					<a href="http://www.cs.columbia.edu/~kaufman" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+	
+		<!-- DAC -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://people.csail.mit.edu/desaic/projects/desdyn.html"><img class="paperBlock" src="./projects/DAC2.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Desai Chen, David I.W. Levin, Wojciech Matusik, and Danny M. Kaufman 
+					<br>
+					<strong> 
+					Dynamics-Aware Numerical Coarsening For Fabrication Design 
+					</strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH 2017) <br>
+					<a href="http://people.csail.mit.edu/desaic/projects/desdyn.html" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- All's Well -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://www.cs.utexas.edu/users/evouga/allrsquos-well-that-ends-well-guaranteed-resolution-of-simultaneous-rigid-body-impact.html"><img class="paperBlock" src="./projects/Alls.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Etienne Vouga, Breannan Smith, Danny M. Kaufman, Rasmus Tamstorf, and Eitan Grinspun
+					<br>
+					<strong> 
+					All's Well That Ends Well: Guaranteed Resolution of Simultaneous Rigid-Body Impact
+					</strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH 2017) <br>
+					<a href="http://www.cs.utexas.edu/users/evouga/allrsquos-well-that-ends-well-guaranteed-resolution-of-simultaneous-rigid-body-impact.html" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Joinery -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="https://jiaxianyao.github.io/joinery/"><img class="paperBlock" src="./projects/joinery.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					JiaXian Yao, Danny M. Kaufman, Yotam Gingold, and Maneesh Agrawala
+					<br>
+					<strong> 
+					Interactive Design and Stability Analysis of Decorative Joinery for Furniture 
+					</strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH 2017) <br>
+					<a href="https://jiaxianyao.github.io/joinery/" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- ADD -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://www.cc.gatech.edu/~ybai30/artistic_dynamics/artistic_dynamics.html"><img class="paperBlock" src="./projects/artistic_dynamics.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Yunfei Bai, Danny M. Kaufman, C. Karen Liu, and Jovan Popović
+					<br>
+					<strong> 
+					Artist-Directed Dynamics for 2D Animation
+					</strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH 2016) <br>
+					<a href="http://www.cc.gatech.edu/~ybai30/artistic_dynamics/artistic_dynamics.html" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- PDPA -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://www.floraine.org/research/physics-driven-pattern-adjustment-for-direct-3d-garment-editing/"><img class="paperBlock" src="./projects/physics_driven.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Aric Bartle, Alla Sheffer, Vladimir G. Kim, Danny M. Kaufman, Nicholas Vining, and Floraine Berthouzoz 
+					<br>
+					<strong> 
+					Physics-driven Pattern Adjustment for Direct 3D Garment Editing 
+					</strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH 2016) <br>
+					<a href="http://www.floraine.org/research/physics-driven-pattern-adjustment-for-direct-3d-garment-editing/" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Simit -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://simit-lang.org/"><img class="paperBlock" src="./projects/simit.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Fredrik Kjølstad, Shoaib Kamil, Jonathan Ragan-Kelley, David Levin, Shinjiro Sueda, Desai Chen, Etienne Vouga, Danny M. Kaufman, Gurtej Kanwar, Wojciech Matusik, and Saman Amarasinghe
+					<br>
+					<strong> 
+					Simit: a Language for Physical Simulation
+					</strong> <br>
+					ACM Transactions on Graphics (presented at SIGGRAPH 2016) <br>
+					<a href="http://simit-lang.org/" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- ADONIS  -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://www.hybrid-ecologies.org/uploads/project/paper/15/p665-lo.pdf"><img class="paperBlock" src="./projects/ae.jpg" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Joanne Lo, Cesar Torres, Isabel Yang, Jasper O’Leary, Danny M. Kaufman, Wilmot Li, Mira Dontcheva, Eric Paulos
+					<br>
+					<strong> 
+					Aesthetic Electronics: Designing, Sketching and Fabricating Circuits Through Digital Exploration
+					</strong> <br>
+					UIST 2016 <br>
+					<a href="http://www.hybrid-ecologies.org/uploads/project/paper/15/p665-lo.pdf" target="_blank"> 
+					Paper, </a>
+					<a href="https://youtu.be/B-F2590qpTQ" target="_blank"> Video</a>
+				</p>
+				</div>
+			</div>
+		</div>
+
+
+		<!--  -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://www.cs.columbia.edu/cg/adonis/"><img class="paperBlock" src="./projects/theo.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Danny M. Kaufman, Rasmus Tamstorf, Breannan Smith, Jean-Marie Aubry, and Eitan Grinspun 
+					<br>
+					<strong> 
+					Adaptive Nonlinearity for Collisions in Complex Rod Assemblies,
+					</strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH 2014) <br>
+					<a href="http://www.cs.columbia.edu/cg/adonis/" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Parsing Patterns -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://vis.berkeley.edu/papers/clopat/"><img class="paperBlock" src="./projects/clpt.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Floraine Berthouzoz, Akash Garg, Danny M. Kaufman, Eitan Grinspun, and Maneesh Agrawala
+					<br>
+					<strong> 
+					Parsing Sewing Patterns into 3D Garment Models
+					</strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH 2013) <br>
+					<a href="http://vis.berkeley.edu/papers/clopat/" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- DELI -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="./projects/DELI-sisc.pdf"><img class="paperBlock" src="./projects/DELI.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Danny M. Kaufman and Dinesh K. Pai
+					<br>
+					<strong> 
+						Geometric Numerical Integration of Inequality Constrained Nonsmooth Hamiltonian Systems
+					</strong> <br>
+					SIAM Journal on Scientific Computing, 34(5), 2012 <br>
+					<a href="./projects/DELI-sisc.pdf" target="_blank"> 
+					Paper, </a> <a href="https://epubs.siam.org/doi/abs/10.1137/100800105"> SISC </a> </p>
+
+					Structure Preserving Integration of Inequality Constrained Dynamics <br>
+					<a href="http://www.mfo.de/document/1112/OWR_2011_16.pdf" target="_blank"> Oberwolfach Report No. 16, 2011 </a>
+
+				</div>
+			</div>
+		</div>
+
+		<!--  -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://www.cs.columbia.edu/cg/rosi/"><img class="paperBlock" src="./projects/matryoshka.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Breannan Smith, Danny M. Kaufman, Etienne Vouga,  Rasmus Tamstorf, and Eitan Grinspun 
+					<br>
+					<strong> 
+					Reflections on Simultaneous Impact 
+					</strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH 2012) <br>
+					<a href="http://www.cs.columbia.edu/cg/rosi/" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+
+		<!--  -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://www.cs.columbia.edu/cg/SC/"><img class="paperBlock" src="./projects/SC.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Nobuyuki Umetani, Danny M. Kaufman, Takeo Igarashi, and Eitan Grinspun 
+					<br>
+					<strong> 
+					 Sensitive Couture for Interactive Garment Editing and Modeling
+					</strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH 2011) <br>
+					<a href="http://www.cs.columbia.edu/cg/SC/" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Coupled -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="./projects/dissertation.pdf"><img class="paperBlock" src="./projects/SP.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Danny M. Kaufman 
+					<br>
+					<strong> 
+					Coupled Principles For Computational Frictional Contact Mechanics
+					</strong> <br>
+					2009, <a href="./projects/dissertation.pdf" target="_blank">Dissertation </a> 
+				</div>
+			</div>
+		</div>
+
+		<!--  -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://www.cs.ubc.ca/labs/sensorimotor/projects/sp_sigasia08/"><img class="paperBlock" src="./projects/cardsStill.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Danny M. Kaufman,  Shinjiro Sueda, Doug L. James, and Dinesh K. Pai 
+					<br>
+					<strong> 
+					Staggered Projections for Frictional Contact in Multibody Systems
+					</strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH Asia 2008) <br>
+					<a href="http://www.cs.ubc.ca/labs/sensorimotor/projects/sp_sigasia08/" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Tree -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://www.cs.ubc.ca/~dkaufman/papers/KSP07.pdf"><img class="paperBlock" src="./projects/acs.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Danny M. Kaufman, Shinjiro Sueda, and Dinesh K. Pai
+					<br>
+					<strong> 
+					 Contact Trees: Adaptive Contact Sampling for  Robust Dynamics
+					</strong> <br>
+					Technical Sketches (SIGGRAPH 2007) <br>
+					<a href="http://www.cs.ubc.ca/~dkaufman/papers/KSP07.pdf" target="_blank"> 
+					Technical sketch </a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- random QP -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://www.cs.ubc.ca/~dkaufman/papers/KP06.pdf"><img class="paperBlock" src="./projects/qp.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Danny M. Kaufman and Dinesh K. Pai 
+					<br>
+					<strong> 
+					Randomized Quadratic Programming with Applications to Rigid Body Contact
+					</strong> <br>
+					Technical Report, UBC, 2006 <br>
+					<a href="http://www.cs.ubc.ca/~dkaufman/papers/KP06.pdf" target="_blank"> 
+					Technical report </a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- FFD -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="./projects/ffd/ffdfrb.html"><img class="paperBlock" src="./projects/chessStill.jpg" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Danny M. Kaufman, Timothy Edmunds and Dinesh K. Pai
+					<br>
+					<strong> 
+					Fast Frictional Dynamics for Rigid Bodies
+					</strong> <br>
+					ACM Transactions on Graphics (SIGGRAPH 2005) <br>
+					<a href="./projects/ffd/ffdfrb.html" target="_blank"> 
+					Project Page </a></p>
+				</div>
+			</div>
+		</div>
+
+		<!--  -->
+		<div class="paperBlock">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://link.springer.com/book/10.1007/b136620"><img class="paperBlock" src="./projects/se2.png" width="100%"></a>
+				</div>
+				<div class="col-sm-9">
+					Danny M. Kaufman and Dinesh K. Pai
+					<br>
+					<strong> 
+					Rapid Collision Dynamics for Multiple Contacts with Friction 
+					</strong> <br>
+					in <em> Multi-Point Physical Interaction with Real and Virtual Objects </em> <br>
+					Springer Tracts on Advanced Robotics 18, Springer-Verlag, 2005 <br>
+					<a href="http://link.springer.com/book/10.1007/b136620" target="_blank"> 
+					Book </a></p>
+				</div>
+			</div>
+		</div>
+
+</div>
+
+<div class="page-header">
+	<h3 data-toc-text="Codes">Miscellaneous</h3>
+</div>
+	We organized a <a href="http://www.birs.ca/events/2014/5-day-workshops/14w5147"> BIRS workshop </a> on Computational Contact Mechanics, Banff, February, 2014.
+
+
+</body>
+</html>

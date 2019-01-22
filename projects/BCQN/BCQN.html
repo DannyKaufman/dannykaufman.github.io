@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Blended Cured Quasi-Newton for Distortion Optimization</title>
+<link href="./BCQN_files/charhan_edited.css" rel="stylesheet" type="text/css">
+	<meta name="description" content="Blended Cured Quasi-Newton for Distortion Optimization project page">
+		<meta name="keywords" content="">
+			<meta name="robots" content="all, index, follow">
+				<meta name="author" content="Danny Kaufman">
+					<meta name="author-url" content="http://www.cs.columbia.edu/~kaufman/">
+
+</head>
+<body>
+
+<div id="body">
+	<div class="center">
+		<h1>Blended Cured Quasi-Newton for Distortion Optimization</h1>
+		
+		
+		<span class="author"><a href="http://www.cs.ubc.ca/~mike323/">Yufeng Zhu </a><sup>1,2</sup></span>
+		<span class="author"><a href="http://www.cs.ubc.ca/~rbridson/">Robert Bridson</a><sup>2,3</sup></span>
+		<span class="author"><a href="http://www.cs.columbia.edu/~kaufman/">Danny M. Kaufman</a><sup>1</sup></span>
+		<br><br>
+		<span class="affiliation"><sup>1</sup><a href="https://research.adobe.com/">Adobe Research</a></span>
+		<span class="affiliation"><sup>2</sup><a href="http://www.cs.ubc.ca/">University of British Columbia</a></span>
+		<span class="affiliation"><sup>3</sup><a href="https://www.autodesk.com/">Autodesk</a></span>
+		<br><br>
+
+<img alt="" src="./BCQN_files/BCQN.jpg" width="800">
+
+</div>
+
+<div id="info" class="section">
+  <h3 class="heading">Abstract</h3>
+  <p class="abstract">
+Optimizing distortion energies over a mesh, in two or three dimensions,
+is a common and critical problem in physical simulation and geometry
+processing. We present three new improvements to the state of the
+art: a barrier-aware line-search filter that cures blocked descent
+steps due to element barrier terms and so enables rapid progress;
+an energy proxy model that adaptively blends the Sobolev
+(inverse-Laplacian-processed) gradient and L-BFGS descent to gain
+the advantages of both, while avoiding L-BFGS's current limitations
+in distortion optimization tasks; and a characteristic gradient
+norm providing a robust and largely mesh- and energy-independent
+convergence criterion that avoids wrongful termination when algorithms
+temporarily slow their progress. Together these improvements form
+the basis for Blended Cured Quasi-Newton (BCQN), a new distortion
+optimization algorithm. Over a wide range of problems over all
+scales we show that BCQN is generally the fastest and most robust
+method available, making some previously intractable problems
+practical while offering up to an order of magnitude improvement
+in others.
+  </p>
+</div>
+
+<div id="files" class="section" align="center">
+  <h3 class="heading">Files</h3>
+  <dl class="filelist">
+    <dt>Paper: </dt><dd> <span class="file">[<a href="./BCQN_files/paper.pdf">PDF</a>]</span>
+    </dd>
+    <dt>Video: </dt><dd> <span class="file">[<a href="./BCQN_files/bcqn.mp4">MP4</a>] [<a href="">YouTube</a>]</span>
+    </dd>
+    <dt>Supplemental material:</dt><dd> <span class="file">[<a href="./BCQN_files/supplement.pdf">PDF</a>]</span>
+	</dd></dl>
+</div>
+
+<!--<div id="video" class="section">
+<video class="movie" src="./BCQN_files/bcqn.mp4" controls height="576" width="800"></video>
+</div>-->
+
+<div class="bib">
+  <h3 class="heading">BibTeX</h3> 
+  <pre>@article{bcqn18,
+    author = "Yufeng Zhu and Robert Bridson and Danny M. Kaufman",
+    title = "Blended Cured Quasi-Newton for Distortion Optimization",
+    journal = {to appear ACM Trans. on Graphics (SIGGRAPH 2018)},
+    year = 2018
+}
+</pre>
+</div>
+
+<div class="funding">
+  <h3 class="heading">Funding</h3>
+   <p>
+	 This work was supported in part by the NSERC of Canada.
+	</p>
+</div>
+
+<div class="footer">
+    Updated: June 18, 2018
+</div>
+</div>
+
+
+
+
+</body></html>
