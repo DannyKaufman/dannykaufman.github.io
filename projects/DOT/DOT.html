@@ -1,0 +1,112 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Decomposed Optimization Time Integrator for Large-Step Elastodynamics">
+  <meta name="author" content="Minchen Li">
+
+  <title>DOT</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  <style>
+    p {font:10pt Arial}
+    .heading {font-family: 'Open Sans', serif; font-size: 20pt}
+    .subheading {font-family: 'Open Sans', serif; font-size: 11pt}
+    img {-webkit-box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2); -webkit-border-radius: 6px;
+  border-radius: 6px;}
+    .main {width:1000px; background-color:white; margin-top: 0px; margin-left: auto; margin-right:auto;  -webkit-border-radius: 10px;
+  border-radius: 10px;}
+   .regularHeader {font:16pt Playfair Display; margin-top:20px}
+   td {padding-top: 5px; padding-bottom: 5px;}
+   .text {font-family: 'Open Sans', sans-serif; font-size: 11pt; text-align:justify; margin-left:20px; margin-right:20px}
+    a {color:black; text-decoration:none}
+    a:hover  {color:green; text-decoration:underline}
+  </style>
+</head>
+
+<body bgcolor="#dedede">
+<div class="main">
+<div style="margin: 0pt 15pt 25pt 15pt; padding-top:10px">
+  <div class="heading">Decomposed Optimization Time Integrator for Large-Step Elastodynamics</div><br>
+  <div class="subheading" style="margin-top:-8pt;text-align:center;font-size:13pt">
+  	<a href="http://www.seas.upenn.edu/~minchenl/" target="_blank">Minchen Li</a><sup>1,2</sup>,&nbsp;
+      <a href="https://www.seas.upenn.edu/~minggao/" target="_blank">Ming Gao</a><sup>1</sup>,&nbsp;
+      <a href="http://langlo.is/" target="_blank">Timothy Langlois</a><sup>2</sup>,&nbsp;
+      <a href="https://www.seas.upenn.edu/~cffjiang/" target="_blank">Chenfanfu Jiang</a><sup>1</sup>,&nbsp;
+      <a href="http://dannykaufman.io/" target="_blank">Danny M. Kaufman</a><sup>2</sup> <br/ >
+      <div style="margin-top:6pt;"><sup>1</sup>University of Pennsylvania,&nbsp; <sup>2</sup>Adobe Research</text>
+      <!-- <a href="http://www.seas.upenn.edu/~minchenl/" target="_blank">Minchen Li</a>&nbsp; -&nbsp; University of Pennsylvania & Adobe Research <br />
+      <a href="https://www.seas.upenn.edu/~minggao/" target="_blank">Ming Gao</a>&nbsp; -&nbsp; University of Pennsylvania <br />
+      <a href="http://langlo.is/" target="_blank">Timothy Langlois</a>&nbsp; -&nbsp; Adobe Research <br />
+      <a href="https://www.seas.upenn.edu/~cffjiang/" target="_blank">Chenfanfu Jiang</a>&nbsp; -&nbsp; University of Pennsylvania <br />
+      <a href="http://dannykaufman.io/" target="_blank">Danny M. Kaufman</a>&nbsp; -&nbsp; Adobe Research <br /> -->
+  </div>
+  <div class="subheading" style="margin-top:8pt;"><span style="font-style: italic">ACM Transactions on Graphics (SIGGRAPH), 2019</span></div>
+<div align="center" style="clear:none; margin-top:15px">
+    <img src="img/teaser.jpg" style="padding:3pt; width:99%">
+    <div class="text" style="text-align:left; font-size:10pt; margin-top:10pt">
+    	<b>Severe deformation dynamics simulated with large steps.</b> <b>(a)</b> The Decomposed Optimization Time Integrator (DOT) decomposes spatial domains to generate high-quality simulations of nonlinear materials undergoing large-deformation dynamics. In <b>(b)</b> we apply DOT to rapidly stretch and pull an Armadillo backwards. We render in <b>(c)</b> a few frames of the resulting slingshot motion right after release. DOT efficiently solves time steps while achieving user-specified accuracies --- even when stepping at frame-rate size steps; here at 25 ms. In <b>(d)</b> we emphasize the large steps taken by rendering all DOT-simulated time steps from the Armadillo's high-speed trajectory for the first few moments after release.</div>
+	</div>
+
+<div class="regularHeader" style="margin-bottom:15px;text-align:left;">Paper</div>
+<div class="text">
+<!-- <a href="doc/OptCuts_small.pdf" target="_blank"><img src="img/paper_preview.jpg", style="max-width:100%"></a> -->
+<p class="text">
+  <b><a href="doc/li2019dot.pdf" target="_blank">PDF (7.5 MB)</a></b>
+  &nbsp;&nbsp;&nbsp;<!-- 
+  <b><a href="doc/OptCuts_small.pdf" target="_blank">PDF (10 MB)</a></b> -->
+</p>
+</div>
+
+<div class="regularHeader" style="text-align:left;">Abstract</div>
+<p class="text">
+Simulation methods are rapidly advancing the accuracy, consistency and controllability of elastodynamic modeling and animation. Critical to these advances, we require efficient time step solvers that reliably solve all implicit time integration problems for elastica. While available time step solvers succeed admirably in some regimes, they become impractically slow, inaccurate, unstable, or even divergent in others --- as we show here. Towards addressing these needs we present the Decomposed Optimization Time Integrator (DOT), a new domain-decomposed optimization method for solving the per time step, nonlinear problems of implicit numerical time integration. DOT is especially suitable for large time step simulations of deformable bodies with nonlinear materials and high-speed dynamics. It is efficient, automated, and robust at large, fixed-size time steps, thus ensuring stable, continued progress of high-quality simulation output. Across a broad range of extreme and mild deformation dynamics, using frame-rate size time steps with widely varying object shapes and mesh resolutions, we show that DOT always converges to user-set tolerances, 
+generally well-exceeding and always close to the best wall-clock times across all previous nonlinear time step solvers, irrespective of the deformation applied.
+</p>
+
+<div class="regularHeader" style="margin-bottom:15px;text-align:left;">Video</div>
+<div class="text" align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AIlYF8e_aqU" frameborder="0" allowfullscreen="", style="-webkit-box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2)"></iframe>
+<br />
+<p class="text"><b><a href="img/DOT.mp4" target="_blank">MP4 (50 MB)</a></b></p>
+</div>
+
+<div class="regularHeader" style="margin-bottom:15px;text-align:left;">Source Code and Data</div>
+<div class="text">
+  <p class="text">
+    <!-- <b><a href="https://github.com/liminchen/OptCuts" target="_blank">GitHub</a></b> -->
+    <i>coming soon!</i>
+  </p>
+</div>
+
+<div class="regularHeader" style="margin-bottom:15px;text-align:left;">BibTex</div>
+<div class="text">
+<pre>@article{Li:2019:DOT,
+  author  = {Minchen Li and Ming Gao and Timothy Langlois and Chenfanfu Jiang and Danny M. Kaufman},
+  title   = {Decomposed Optimization Time Integrator for Large-Step Elastodynamics},
+  journal = {ACM Transactions on Graphics},
+  year    = {2019},
+  volume = {38},
+  number = {4},
+  publisher = {ACM}
+}
+</pre>
+</div>
+    
+<div class="regularHeader" style="margin-bottom:15px;text-align:left;">Supplemental Document</div>
+<div class="text">
+  <ul>
+    <li><b><a href="doc/li2019dotsupp.pdf" target="_blank">Experimental Data (0.3 MB)</a></b></li>
+  </ul>
+</div>
+
+<br>
+</div>
+</div>
+
+</div>
+</body>
+
+</html>
